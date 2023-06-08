@@ -1,0 +1,21 @@
+$bp-mobile: 480px;
+$bp-tablet: 834px;
+$bp-desktop: 1440px;
+
+@mixin for-phone-only {
+  @media (max-width: ($bp-tablet - 1px)) {
+    @content;
+  }
+}
+
+@mixin for-tablet-up {
+  @media (min-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+}
