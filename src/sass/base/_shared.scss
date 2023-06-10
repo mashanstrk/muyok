@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "DM Sans", "Times New Roman", Times, serif;
+    background-color: var(--main-bg-cl);
+    overflow-y: scroll;
+    transition: background-color var(--cubic-time);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .icon {
+    fill: currentColor;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+  
+  %cut-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
