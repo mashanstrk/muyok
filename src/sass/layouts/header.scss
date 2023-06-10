@@ -1,0 +1,12 @@
+.header {
+    width: 100%;
+  z-index: 3;
+    position: absolute;
+
+  &__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 35px 15px;
+  }
+}

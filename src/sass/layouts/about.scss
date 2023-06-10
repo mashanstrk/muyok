@@ -1,0 +1,50 @@
+.container {
+  padding-top: 110px;
+  padding-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about {
+  &__title {
+    margin-bottom: 32px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.75;
+    text-transform: uppercase;
+
+    color: #0e0e0e;
+  }
+
+  &__image {
+    margin-bottom: 16px;
+  }
+
+  &__second-title {
+    margin-bottom: 16px;
+    font-family: 'Saira';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 1.82;
+
+
+color: #0E0E0E;
+  }
+
+  &__description {
+    font-family: 'Saira';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+
+color: #0E0E0E;
+  }
+
+}

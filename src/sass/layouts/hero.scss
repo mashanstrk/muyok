@@ -1,0 +1,63 @@
+.hero {
+  background-color: #234ecd;
+  background-image: url(../images/background-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1033px;
+
+  &__content {
+    padding-top: 290px;
+    padding-left: 35px;
+    padding-right: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1.53;
+
+    text-transform: uppercase;
+
+    margin-bottom: 32px;
+
+    color: #0e0e0e;
+  }
+
+  &__description {
+    margin-bottom: 32px;
+
+    font-family: 'Saira';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.56;
+
+color: #0E0E0E;
+}
+
+&__button {
+
+width: 321px;
+height: 64px;
+
+background-color: #56C0FC;
+border-color: #56C0FC;
+border-radius: 8px;
+
+font-family: 'Saira';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.78;
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+}
