@@ -1,1 +1,9 @@
-@import './common';
+/* base settings */
+@import './base/common';
+@import './base/breakpoints';
+@import './base/container';
+@import './base/content-container';
+@import './base/shared';
+@import './base/vars';
+
+/* main styles */
