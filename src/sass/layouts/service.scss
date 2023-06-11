@@ -15,6 +15,7 @@
   }
 
   &__title {
+    margin-bottom: 32px;
     text-align: center;
     font-family: 'Oswald';
     font-weight: 600;
@@ -27,6 +28,11 @@
   }
 
   &__item {
+    // padding-left: 16px;
+    // padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 188px;
     height: 287px;
 
@@ -54,5 +60,41 @@ text-align: center;
 
 color: #0E0E0E;
     }
+
+    &__thumb {
+      height: 130px;
+      padding: 12px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
+
+  &__button {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 262px;
+height: 48px;
+
+border: #56C0FC;
+background: #56C0FC;
+border-radius: 8px;
+font-family: 'Saira';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.5;
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+  }
+
+}
+
+.button-container {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
 }
