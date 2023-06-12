@@ -5,15 +5,18 @@
   background-position: center;
   background-size: cover;
   height: 1033px;
+    padding-left: 35px;
+  padding-right: 35px;
 
   &__content {
     padding-top: 290px;
-    padding-left: 35px;
-    padding-right: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__title {
