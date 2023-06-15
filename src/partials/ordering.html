@@ -1,17 +1,24 @@
-<section class="ordering">
-  <div class="ordering_container">
-    <h2>Консультація та розрахунок вартості</h2>
-    <form name="ordering-form">
-      <div class="form__field">
+<section class="ordering section-container">
+  <div class="ordering__container">
+    <h2 class="ordering__title">Консультація та розрахунок вартості</h2>
+    <form name="ordering__form">
+      <div class="ordering__form__field">
         <input
           id="user-name"
-          class="form__input"
+          class="ordering__form__input"
           type="text"
           name="user-name"
+          placeholder="Ім'я"
         />
-        <input id="tel" class="form__input" type="tel" name="user-tel" />
+        <input
+          id="tel"
+          class="ordering__form__input"
+          type="tel"
+          name="user-tel"
+          placeholder="+380 (00) 00 00 000"
+        />
+        <button type="submit" class="ordering__button">Залишити заявку</button>
       </div>
-      <button type="submit" class="order__button">Залишити заявку</button>
     </form>
   </div>
 </section>
