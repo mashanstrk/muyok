@@ -1,0 +1,40 @@
+.footer {
+height: 188px;
+background: rgba(0, 163, 255, 0.08);
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+&__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__item {
+        font-family: 'Saira';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.6;
+
+color: rgba(14, 14, 14, 0.6);
+    }
+}
+
+&__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__item {
+        font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+
+
+color: #0E0E0E;
+    }
+}
+}
