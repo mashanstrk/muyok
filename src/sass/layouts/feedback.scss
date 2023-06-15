@@ -1,0 +1,51 @@
+.feedback {
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    &__title {
+        font-family: 'Oswald';
+        font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 2;
+
+text-transform: uppercase;
+
+color: #0E0E0E;
+    }
+
+    &__card {
+        padding: 24px;
+        width: 315px;
+height: 284px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(159, 159, 159, 0.22);
+border-radius: 8px;
+
+
+&__photo {
+    margin-bottom: 16px;
+}
+
+&__name {
+    font-family: 'Saira';
+font-weight: 600;
+font-size: 16px;
+line-height: 2;
+
+color: #0E0E0E;
+
+}
+
+&__text {
+    font-family: 'Saira';
+font-weight: 400;
+font-size: 14px;
+line-height: 1.6;
+
+color: #0E0E0E;
+}
+    }
+
+}
