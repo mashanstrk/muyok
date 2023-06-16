@@ -9,12 +9,12 @@
   padding-right: 35px;
 
   &__content {
+    max-width: 360px;
     padding-top: 290px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 360px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -45,7 +45,9 @@ color: #0E0E0E;
 }
 
 &__button {
-
+  @include for-small-phone {
+    width: 300px;
+}
 width: 321px;
 height: 64px;
 

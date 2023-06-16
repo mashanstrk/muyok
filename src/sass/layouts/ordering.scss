@@ -37,6 +37,10 @@ color: #0E0E0E;
     
     border: 1px solid #00A3FF;
     border-radius: 8px;
+
+    @include for-small-phone {
+        width: 300px;
+    }
     }
 
     &__button {
