@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".js-menu-container"),s=document.querySelector(".js-open-menu"),t=document.querySelector(".js-menu-icon");s.addEventListener("click",(function(){e.classList.contains("closed")?(e.classList.remove("closed"),e.classList.add("is-open"),t.setAttribute("href","/symbol-defs.a8b2e413.svg#icon-close")):(e.classList.remove("is-open"),e.classList.add("closed"),t.setAttribute("href","/symbol-defs.a8b2e413.svg#icon-menu"))}))}();
+//# sourceMappingURL=index.e8c74dda.js.map
