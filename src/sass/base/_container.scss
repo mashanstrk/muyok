@@ -1,4 +1,11 @@
 .section-container {
-padding-left: 42px;
-padding-right: 42px;
+    @include for-small-phone {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@include for-phone-only {
+        padding-left: 42px;
+        padding-right: 42px;
+    }
 }

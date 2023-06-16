@@ -2,8 +2,14 @@ $bp-mobile: 480px;
 $bp-tablet: 834px;
 $bp-desktop: 1440px;
 
+@mixin for-small-phone {
+  @media (max-width: $bp-mobile) {
+    @content;
+  }
+}
+
 @mixin for-phone-only {
-  @media (max-width: ($bp-tablet - 1px)) {
+  @media (min-width: $bp-mobile) {
     @content;
   }
 }
