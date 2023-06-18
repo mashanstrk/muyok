@@ -21,18 +21,18 @@
 //     });
 //   })();
 
+
 const mobileMenu = document.querySelector('.js-menu-container');
 const openMenuBtn = document.querySelector('.js-open-menu');
 const menuIcon = document.querySelector('.js-menu-icon');
+const header = document.querySelector('.header');
 
 openMenuBtn.addEventListener("click", function() {
-  if (mobileMenu.classList.contains("closed")) {
-    mobileMenu.classList.remove("closed");
-    mobileMenu.classList.add("is-open");
-    menuIcon.setAttribute("href", "/symbol-defs.a8b2e413.svg#icon-close");
+  mobileMenu.classList.toggle("is-open");
+  menuIcon.setAttribute("href", "/symbol-defs.a8b2e413.svg#icon-" + (mobileMenu.classList.contains("is-open") ? "close" : "menu"));
+  if (mobileMenu.classList.contains("is-open")) {
+    header.style.position = "fixed";
   } else {
-    mobileMenu.classList.remove("is-open");
-    mobileMenu.classList.add("closed");
-    menuIcon.setAttribute("href", "/symbol-defs.a8b2e413.svg#icon-menu");
+    header.style.position = "absolute";
   }
 });
