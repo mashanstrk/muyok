@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector(".js-menu-container"),n=document.querySelector(".js-open-menu"),s=document.querySelector(".js-menu-icon"),t=document.querySelector(".header");n.addEventListener("click",(function(){e.classList.toggle("is-open"),s.setAttribute("href","/symbol-defs.a8b2e413.svg#icon-"+(e.classList.contains("is-open")?"close":"menu")),e.classList.contains("is-open")?t.style.position="fixed":t.style.position="absolute"}))}();
-//# sourceMappingURL=index.e1fbe472.js.map

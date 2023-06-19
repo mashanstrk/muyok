@@ -1,2 +1,0 @@
-const e=document.querySelector(".js-menu-container"),s=document.querySelector(".js-open-menu"),t=document.querySelector(".js-menu-icon"),n=document.querySelector(".header");s.addEventListener("click",(function(){e.classList.toggle("is-open"),t.setAttribute("href","/symbol-defs.a8b2e413.svg#icon-"+(e.classList.contains("is-open")?"close":"menu")),e.classList.contains("is-open")?n.style.position="fixed":n.style.position="absolute"}));
-//# sourceMappingURL=index.493dc4c6.js.map
