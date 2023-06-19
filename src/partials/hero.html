@@ -5,6 +5,40 @@
       Миття вікон, фасадів, вітрин, прибирання приміщень, інші види клінінгових
       робіт
     </p>
-    <button class="hero__button">Замовити прибирання</button>
+    <button class="hero__button" type="button" data-modal-open>
+      Замовити прибирання
+    </button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close" data-modal-close>
+          <svg width="26" height="18">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal_form">
+          <form name="ordering__form">
+            <div class="ordering__form__field">
+              <input
+                id="user-name"
+                class="ordering__form__input"
+                type="text"
+                name="user-name"
+                placeholder="Ім'я"
+              />
+              <input
+                id="tel"
+                class="ordering__form__input"
+                type="tel"
+                name="user-tel"
+                placeholder="+380 (00) 00 00 000"
+              />
+              <button type="submit" class="ordering__button">
+                Залишити заявку
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
