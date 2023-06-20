@@ -21,19 +21,38 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
+    @include for-tablet-up {
+      max-width: 650px;
+      padding-top: 200px;
+    }
+
+    @include for-desktop-up {
+      max-width: 980px;
+      padding-top: 300px;
+    }
   }
 
   &__title {
     font-family: 'Oswald';
     font-style: normal;
     font-size: 32px;
-    line-height: 1.53;
+    line-height: 1.5;
 
     text-transform: uppercase;
 
     margin-bottom: 32px;
 
     color: #0e0e0e;
+
+    @include for-tablet-up {
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+
+    @include for-desktop-up {
+      font-size: 56px;
+    }
   }
 
   &__description {
@@ -46,6 +65,12 @@ font-size: 16px;
 line-height: 1.56;
 
 color: #0E0E0E;
+
+@include for-tablet-up {
+  font-size: 24px;
+  margin-bottom: 24px;
+
+}
 }
 
 &__button {
@@ -57,8 +82,8 @@ margin-left: auto;
 width: 321px;
 height: 64px;
 
-background-color: #56C0FC;
-border-color: #56C0FC;
+background-color: #00A3FF;
+border-color: transparent;
 border-radius: 8px;
 
 font-family: 'Saira';
@@ -70,5 +95,11 @@ line-height: 1.78;
 text-transform: uppercase;
 
 color: #FFFFFF;
+
+@include for-tablet-up {
+  width: 401px;
+  font-size: 24px;
+  line-height: 1.3;
+}
 }
 }
