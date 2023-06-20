@@ -8,4 +8,14 @@
         padding-left: 42px;
         padding-right: 42px;
     }
+
+@include for-tablet-up {
+    padding-left: 71px;
+    padding-right: 71px;
+}
+
+@include for-desktop-up {
+    padding-left: 80px;
+    padding-right: 80px;
+}
 }

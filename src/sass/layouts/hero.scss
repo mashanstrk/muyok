@@ -8,6 +8,10 @@
     padding-left: 35px;
   padding-right: 35px;
 
+  @include for-tablet-up {
+    background-image: url(../images/background.desktop.jpg);
+  }
+
   &__content {
     max-width: 360px;
     padding-top: 290px;
