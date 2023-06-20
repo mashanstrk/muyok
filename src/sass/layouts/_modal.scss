@@ -32,3 +32,16 @@
   .modal_form {
     margin-top: 150px;
   }
+
+  .modal__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 163, 255, 0.08);
+    border-radius: 50%;
+    border-color: transparent;
+    margin-left: auto;
+    margin-top: 63px;
+  }

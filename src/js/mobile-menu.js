@@ -29,7 +29,7 @@ const header = document.querySelector('.header');
 
 openMenuBtn.addEventListener("click", function() {
   mobileMenu.classList.toggle("is-open");
-  menuIcon.setAttribute("href", "/symbol-defs.a8b2e413.svg#icon-" + (mobileMenu.classList.contains("is-open") ? "close" : "menu"));
+  menuIcon.setAttribute("href", "/symbol-defs.svg.a8b2e413#icon-" + (mobileMenu.classList.contains("is-open") ? "close" : "menu"));
   if (mobileMenu.classList.contains("is-open")) {
     header.style.position = "fixed";
   } else {

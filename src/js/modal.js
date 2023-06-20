@@ -1,7 +1,7 @@
 
-    const openModalBtn = document.querySelector("[data-modal-open]");
-      const closeModalBtn = document.querySelector("[data-modal-close]");
-      const modal = document.querySelector("[data-modal]");
+    const openModalBtn = document.querySelector(".js-open-modal");
+      const closeModalBtn = document.querySelector(".js-close-modal");
+      const modal = document.querySelector(".js-modal");
       
       openModalBtn.addEventListener("click", toggleModal);
       closeModalBtn.addEventListener("click", toggleModal);
