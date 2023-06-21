@@ -19,10 +19,28 @@
     text-transform: uppercase;
 
     color: #0e0e0e;
+
+    @include for-tablet-up {
+      font-size: 48px;
+      line-height: 1.17;
+      margin-bottom: 48px;
+    }
   }
 
   &__image {
     margin-bottom: 16px;
+
+    @include for-tablet-up {
+      display: none;
+    }
+  }
+
+  &__image__large {
+    display: none;
+    @include for-tablet-up {
+      display: block;
+      margin-top: 16px;
+    }
   }
 
   &__second-title {
@@ -33,6 +51,11 @@ font-weight: 700;
 font-size: 22px;
 line-height: 1.82;
 
+@include for-tablet-up {
+  font-size: 32px;
+line-height: 1.25;
+}
+
 
 color: #0E0E0E;
   }
@@ -42,9 +65,37 @@ color: #0E0E0E;
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 22px;
+line-height: 1.56;
 
 color: #0E0E0E;
+
+@include for-tablet-up {
+  font-size: 16px;
+}
+  }
+
+  &__button {
+    display: none;
+    margin-top: 48px;
+    width: 385px;
+height: 64px;
+
+background: #00A3FF;
+border-color: transparent;
+border-radius: 8px;
+font-family: 'Saira';
+font-weight: 700;
+font-size: 24px;
+line-height: 1.33;
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+@include for-tablet-up {
+  display: block;
+}
+
   }
 
 }

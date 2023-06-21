@@ -5,14 +5,15 @@
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(188px, 1fr));
-    gap: 10px;
-    justify-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 
-    @include for-small-phone {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
+    @include for-tablet-up {
+      gap: 30px;
+    }
+
 
   }
 
@@ -27,13 +28,18 @@
     text-transform: uppercase;
 
     color: #0e0e0e;
+
+    @include for-tablet-up {
+      font-size: 48px;
+      margin-bottom: 48px;
+    }
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 188px;
+    width: 187px;
     height: 287px;
 
     box-shadow: 0px 4px 4px rgba(159, 159, 159, 0.22);
@@ -41,6 +47,11 @@
 
     @include for-small-phone {
       width: 150px;
+  }
+
+  @include for-tablet-up {
+    width: 331px;
+    height: 324px;;
   }
 
     &__title {
@@ -52,6 +63,11 @@
       text-align: center;
 
       color: #0e0e0e;
+
+      @include for-tablet-up {
+        font-size: 18px;
+        line-height: 1.44;
+      }
     }
 
     &__price {
@@ -63,6 +79,12 @@ line-height: 2.4;
 text-align: center;
 
 color: #0E0E0E;
+
+@include for-tablet-up {
+  font-size: 16px;
+  line-height: 1.5;
+
+}
     }
 
     &__thumb {
@@ -71,6 +93,11 @@ color: #0E0E0E;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      @include for-tablet-up {
+        height: 150px;
+        padding: 16px;
+      }
     }
   }
 
@@ -81,8 +108,8 @@ color: #0E0E0E;
     width: 262px;
 height: 48px;
 
-border: #56C0FC;
-background: #56C0FC;
+border: transparent;
+background: #00A3FF;
 border-radius: 8px;
 font-family: 'Saira';
 font-style: normal;
@@ -93,6 +120,13 @@ line-height: 1.5;
 text-transform: uppercase;
 
 color: #FFFFFF;
+
+@include for-tablet-up {
+  width: 385px;
+height: 64px;
+font-size: 24px;
+line-height: 1.33;
+}
   }
 
 }
@@ -101,4 +135,8 @@ color: #FFFFFF;
   margin-top: 32px;
   display: flex;
   align-items: center;
+
+  @include for-tablet-up {
+    margin-top: 48px;
+  }
 }
