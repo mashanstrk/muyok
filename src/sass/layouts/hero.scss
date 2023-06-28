@@ -77,6 +77,8 @@ color: #0E0E0E;
   @include for-small-phone {
     width: 300px;
 }
+cursor: pointer;
+
 margin-right: auto;
 margin-left: auto;
 width: 321px;
@@ -102,4 +104,29 @@ color: #FFFFFF;
   line-height: 1.3;
 }
 }
+}
+
+// .hero::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: linear-gradient(90deg, rgba(0,0,0,0.1518732492997199) 0%, rgba(255,255,255,0.18548669467787116) 50%, rgba(0,0,0,0.1518732492997199) 100%);
+
+//   pointer-events: none;
+// }
+
+.modal__bg {
+  width: 480px;
+  height: 1600px;
+  left: 50%; /* Розташуйте блок на 50% ширини відносно батьківського контейнера */
+  top: 50%; /* Розташуйте блок на 50% висоти відносно батьківського контейнера */
+  transform: translate(-50%, -50%) rotate(-60deg); /* Застосуйте зміщення відповідно до розміру блоку та повороту */
+  background-color: rgba(0, 163, 255, 0.08);
+  position: absolute; 
+  z-index: -1;
+  overflow: hidden;
+  
 }
