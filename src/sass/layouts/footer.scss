@@ -9,6 +9,14 @@ align-items: center;
     height: 256px;
 }
 
+&__logo {
+    display: none;
+
+    @include for-tablet-up {
+        display: block;
+    }
+}
+
 &__nav {
     display: flex;
     flex-direction: column;

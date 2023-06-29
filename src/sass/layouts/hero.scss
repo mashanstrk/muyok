@@ -119,14 +119,18 @@ color: #FFFFFF;
 // }
 
 .modal__bg {
-  width: 480px;
+  width: 400px;
   height: 1600px;
-  left: 50%; /* Розташуйте блок на 50% ширини відносно батьківського контейнера */
-  top: 50%; /* Розташуйте блок на 50% висоти відносно батьківського контейнера */
+  left: 50%; 
+  top: 50%;
   transform: translate(-50%, -50%) rotate(-60deg); /* Застосуйте зміщення відповідно до розміру блоку та повороту */
   background-color: rgba(0, 163, 255, 0.08);
   position: absolute; 
   z-index: -1;
   overflow: hidden;
+
+  @include for-tablet-up {
+    display: none;
+  }
   
 }
