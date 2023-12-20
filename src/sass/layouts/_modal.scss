@@ -22,6 +22,11 @@ height: 680px;
 
 
   &__input {
+
+    @include for-small-phone {
+      width: 300px;
+    }
+
     padding: 21px 24px;
     width: 396px;
     height: 64px;
@@ -29,6 +34,7 @@ height: 680px;
     border: 1px solid #00a3ff;
     border-radius: 8px;
     background-color: transparent;
+
 
     @include for-tablet-up {
       width: 602px;

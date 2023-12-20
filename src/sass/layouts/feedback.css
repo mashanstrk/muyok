@@ -1,0 +1,52 @@
+.feedback {
+  position: relative;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  overflow: hidden;
+}
+.feedback__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: #0E0E0E;
+}
+.feedback__card {
+  padding: 24px;
+  width: 315px;
+  height: 284px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(159, 159, 159, 0.22);
+  border-radius: 8px;
+}
+.feedback__card__photo {
+  margin-bottom: 16px;
+}
+.feedback__card__name {
+  font-family: "Saira";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2;
+  color: #0E0E0E;
+}
+.feedback__card__text {
+  font-family: "Saira";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #0E0E0E;
+}
+
+.blue__bg {
+  width: 480px;
+  height: 1600px;
+  bottom: 50px;
+  left: 100px;
+  background-color: rgba(0, 163, 255, 0.08);
+  position: absolute;
+  z-index: -1;
+  rotate: -60deg;
+  overflow: hidden;
+}/*# sourceMappingURL=feedback.css.map */

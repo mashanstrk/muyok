@@ -5,6 +5,13 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @include for-desktop-up {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    text-align: start;
+  }
 }
 
 .about {
@@ -41,63 +48,86 @@
       display: block;
       margin-top: 16px;
     }
+
+    @include for-desktop-up {
+      display: none;
+    }
+  }
+
+  &__image__desktop {
+    display: none;
+    @include for-desktop-up {
+      display: block;
+      width: 489px;
+      height: auto;
+    }
   }
 
   &__second-title {
     margin-bottom: 16px;
     font-family: 'Saira';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 1.82;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.82;
 
-@include for-tablet-up {
-  font-size: 32px;
-line-height: 1.25;
-}
+    @include for-tablet-up {
+      font-size: 32px;
+      line-height: 1.25;
+    }
 
-
-color: #0E0E0E;
+    color: #0e0e0e;
   }
 
   &__description {
     font-family: 'Saira';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.56;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.56;
 
-color: #0E0E0E;
+    color: #0e0e0e;
 
-@include for-tablet-up {
-  font-size: 16px;
-}
+    @include for-tablet-up {
+      font-size: 16px;
+    }
   }
 
   &__button {
     display: none;
     margin-top: 48px;
     width: 385px;
-height: 64px;
-cursor: pointer;
+    height: 64px;
+    cursor: pointer;
 
+    background: #00a3ff;
+    border-color: transparent;
+    border-radius: 8px;
+    font-family: 'Saira';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.33;
 
-background: #00A3FF;
-border-color: transparent;
-border-radius: 8px;
-font-family: 'Saira';
-font-weight: 700;
-font-size: 24px;
-line-height: 1.33;
+    text-transform: uppercase;
 
-text-transform: uppercase;
+    color: #ffffff;
 
-color: #FFFFFF;
-
-@include for-tablet-up {
-  display: block;
+    @include for-tablet-up {
+      display: block;
+    }
+  }
 }
 
-  }
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  @include for-desktop-up {
+    align-items: start;
+  }
+}
+
+.about__image__desktop-thumb {
+  width: 100%;
 }
